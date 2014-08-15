@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dconsole" type="Haxe">
+    <CLASSES>
+      <root url="file://C:/HaxeToolkit/haxe/lib/dconsole/4,0,0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/HaxeToolkit/haxe/lib/dconsole/4,0,0" />
+    </SOURCES>
+  </library>
+</component>
