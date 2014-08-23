@@ -18,7 +18,7 @@ class YueGame extends FlxState{
     private var _textField:FlxText;
     private var _canTouch:Bool = false;
     private var _isStart:Bool = false;
-
+    
     private var _nums:Array<Int>;
     private var _tiles:Array<TileAbstract>;
     private var _escapeTime:Float;
