@@ -114,12 +114,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("flixel/flixel-ui/img/tab.png", AssetType.IMAGE);
 		className.set ("flixel/flixel-ui/img/tab_back.png", __ASSET__flixel_flixel_ui_img_tab_back_png);
 		type.set ("flixel/flixel-ui/img/tab_back.png", AssetType.IMAGE);
-		className.set ("flixel/flixel-ui/xml/defaults.xml", __ASSET__flixel_flixel_ui_xml_defaults_xml);
-		type.set ("flixel/flixel-ui/xml/defaults.xml", AssetType.TEXT);
 		className.set ("flixel/flixel-ui/xml/default_loading_screen.xml", __ASSET__flixel_flixel_ui_xml_default_loading_screen_xml);
 		type.set ("flixel/flixel-ui/xml/default_loading_screen.xml", AssetType.TEXT);
 		className.set ("flixel/flixel-ui/xml/default_popup.xml", __ASSET__flixel_flixel_ui_xml_default_popup_xml);
 		type.set ("flixel/flixel-ui/xml/default_popup.xml", AssetType.TEXT);
+		className.set ("flixel/flixel-ui/xml/defaults.xml", __ASSET__flixel_flixel_ui_xml_defaults_xml);
+		type.set ("flixel/flixel-ui/xml/defaults.xml", AssetType.TEXT);
 		
 		
 		#elseif html5
@@ -227,13 +227,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "flixel/flixel-ui/img/tab_back.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "flixel/flixel-ui/xml/defaults.xml";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "flixel/flixel-ui/xml/default_loading_screen.xml";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		id = "flixel/flixel-ui/xml/default_popup.xml";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "flixel/flixel-ui/xml/defaults.xml";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		
@@ -346,14 +346,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("flixel/flixel-ui/img/tab_back.png", __ASSET__flixel_flixel_ui_img_tab_back_png);
 		type.set ("flixel/flixel-ui/img/tab_back.png", AssetType.IMAGE);
 		
-		className.set ("flixel/flixel-ui/xml/defaults.xml", __ASSET__flixel_flixel_ui_xml_defaults_xml);
-		type.set ("flixel/flixel-ui/xml/defaults.xml", AssetType.TEXT);
-		
 		className.set ("flixel/flixel-ui/xml/default_loading_screen.xml", __ASSET__flixel_flixel_ui_xml_default_loading_screen_xml);
 		type.set ("flixel/flixel-ui/xml/default_loading_screen.xml", AssetType.TEXT);
 		
 		className.set ("flixel/flixel-ui/xml/default_popup.xml", __ASSET__flixel_flixel_ui_xml_default_popup_xml);
 		type.set ("flixel/flixel-ui/xml/default_popup.xml", AssetType.TEXT);
+		
+		className.set ("flixel/flixel-ui/xml/defaults.xml", __ASSET__flixel_flixel_ui_xml_defaults_xml);
+		type.set ("flixel/flixel-ui/xml/defaults.xml", AssetType.TEXT);
 		
 		
 		if (useManifest) {
@@ -1005,9 +1005,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__flixel_flixel_ui_img_swatch_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__flixel_flixel_ui_img_tab_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__flixel_flixel_ui_img_tab_back_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep class __ASSET__flixel_flixel_ui_xml_defaults_xml extends openfl.utils.ByteArray { }
 @:keep class __ASSET__flixel_flixel_ui_xml_default_loading_screen_xml extends openfl.utils.ByteArray { }
 @:keep class __ASSET__flixel_flixel_ui_xml_default_popup_xml extends openfl.utils.ByteArray { }
+@:keep class __ASSET__flixel_flixel_ui_xml_defaults_xml extends openfl.utils.ByteArray { }
 
 
 #elseif html5
@@ -1060,37 +1060,37 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/start.jpg") class __ASSET__assets_images_start_jpg extends flash.display.BitmapData {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
-@:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,4/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound {}
-@:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,4/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/box.png") class __ASSET__flixel_flixel_ui_img_box_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button.png") class __ASSET__flixel_flixel_ui_img_button_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_down.png") class __ASSET__flixel_flixel_ui_img_button_arrow_down_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_left.png") class __ASSET__flixel_flixel_ui_img_button_arrow_left_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_right.png") class __ASSET__flixel_flixel_ui_img_button_arrow_right_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_up.png") class __ASSET__flixel_flixel_ui_img_button_arrow_up_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_thin.png") class __ASSET__flixel_flixel_ui_img_button_thin_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/button_toggle.png") class __ASSET__flixel_flixel_ui_img_button_toggle_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/check_box.png") class __ASSET__flixel_flixel_ui_img_check_box_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/check_mark.png") class __ASSET__flixel_flixel_ui_img_check_mark_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/chrome.png") class __ASSET__flixel_flixel_ui_img_chrome_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_flat.png") class __ASSET__flixel_flixel_ui_img_chrome_flat_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_inset.png") class __ASSET__flixel_flixel_ui_img_chrome_inset_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_light.png") class __ASSET__flixel_flixel_ui_img_chrome_light_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/dropdown_mark.png") class __ASSET__flixel_flixel_ui_img_dropdown_mark_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/finger_big.png") class __ASSET__flixel_flixel_ui_img_finger_big_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/finger_small.png") class __ASSET__flixel_flixel_ui_img_finger_small_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/hilight.png") class __ASSET__flixel_flixel_ui_img_hilight_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/invis.png") class __ASSET__flixel_flixel_ui_img_invis_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/minus_mark.png") class __ASSET__flixel_flixel_ui_img_minus_mark_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/plus_mark.png") class __ASSET__flixel_flixel_ui_img_plus_mark_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/radio.png") class __ASSET__flixel_flixel_ui_img_radio_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/radio_dot.png") class __ASSET__flixel_flixel_ui_img_radio_dot_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/swatch.png") class __ASSET__flixel_flixel_ui_img_swatch_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/tab.png") class __ASSET__flixel_flixel_ui_img_tab_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/images/tab_back.png") class __ASSET__flixel_flixel_ui_img_tab_back_png extends flash.display.BitmapData {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/xml/defaults.xml") class __ASSET__flixel_flixel_ui_xml_defaults_xml extends flash.utils.ByteArray {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/xml/default_loading_screen.xml") class __ASSET__flixel_flixel_ui_xml_default_loading_screen_xml extends flash.utils.ByteArray {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel-ui/1,0,2/assets/xml/default_popup.xml") class __ASSET__flixel_flixel_ui_xml_default_popup_xml extends flash.utils.ByteArray {}
+@:sound("/usr/lib/haxe/lib/flixel/3,3,4/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound {}
+@:sound("/usr/lib/haxe/lib/flixel/3,3,4/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/box.png") class __ASSET__flixel_flixel_ui_img_box_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button.png") class __ASSET__flixel_flixel_ui_img_button_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_down.png") class __ASSET__flixel_flixel_ui_img_button_arrow_down_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_left.png") class __ASSET__flixel_flixel_ui_img_button_arrow_left_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_right.png") class __ASSET__flixel_flixel_ui_img_button_arrow_right_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_arrow_up.png") class __ASSET__flixel_flixel_ui_img_button_arrow_up_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_thin.png") class __ASSET__flixel_flixel_ui_img_button_thin_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/button_toggle.png") class __ASSET__flixel_flixel_ui_img_button_toggle_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/check_box.png") class __ASSET__flixel_flixel_ui_img_check_box_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/check_mark.png") class __ASSET__flixel_flixel_ui_img_check_mark_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/chrome.png") class __ASSET__flixel_flixel_ui_img_chrome_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_flat.png") class __ASSET__flixel_flixel_ui_img_chrome_flat_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_inset.png") class __ASSET__flixel_flixel_ui_img_chrome_inset_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/chrome_light.png") class __ASSET__flixel_flixel_ui_img_chrome_light_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/dropdown_mark.png") class __ASSET__flixel_flixel_ui_img_dropdown_mark_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/finger_big.png") class __ASSET__flixel_flixel_ui_img_finger_big_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/finger_small.png") class __ASSET__flixel_flixel_ui_img_finger_small_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/hilight.png") class __ASSET__flixel_flixel_ui_img_hilight_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/invis.png") class __ASSET__flixel_flixel_ui_img_invis_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/minus_mark.png") class __ASSET__flixel_flixel_ui_img_minus_mark_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/plus_mark.png") class __ASSET__flixel_flixel_ui_img_plus_mark_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/radio.png") class __ASSET__flixel_flixel_ui_img_radio_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/radio_dot.png") class __ASSET__flixel_flixel_ui_img_radio_dot_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/swatch.png") class __ASSET__flixel_flixel_ui_img_swatch_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/tab.png") class __ASSET__flixel_flixel_ui_img_tab_png extends flash.display.BitmapData {}
+@:bitmap("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/images/tab_back.png") class __ASSET__flixel_flixel_ui_img_tab_back_png extends flash.display.BitmapData {}
+@:file("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/xml/default_loading_screen.xml") class __ASSET__flixel_flixel_ui_xml_default_loading_screen_xml extends flash.utils.ByteArray {}
+@:file("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/xml/default_popup.xml") class __ASSET__flixel_flixel_ui_xml_default_popup_xml extends flash.utils.ByteArray {}
+@:file("/usr/lib/haxe/lib/flixel-ui/1,0,2/assets/xml/defaults.xml") class __ASSET__flixel_flixel_ui_xml_defaults_xml extends flash.utils.ByteArray {}
 
 
 #end

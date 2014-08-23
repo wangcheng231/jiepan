@@ -1,4 +1,5 @@
 package com.mieaga.game.core;
+import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.FlxG;
 import pgr.dconsole.DC;
@@ -12,6 +13,13 @@ class YueSuccess extends FlxState {
     override public function create():Void
     {
         super.create();
+        var text:FlxText = new FlxText();
+        text.x = Constants.STAGE_WIDTH/2;
+        text.y = Constants.STAGE_HEIGHT*0.15;
+        text.size = 20;
+        text.text = "SUCCESS";
+        add(text);
+
         startButton = new FlxButton(0,0,"",onButtonClick);
         startButton.x = (Constants.STAGE_WIDTH-startButton.width)/2;
         startButton.y = Constants.STAGE_WIDTH*0.35;
