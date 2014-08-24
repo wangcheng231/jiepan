@@ -19,7 +19,7 @@ class YueFailed extends FlxState {
         text.x = Constants.STAGE_WIDTH/2;
         text.y = Constants.STAGE_HEIGHT*0.15;
         text.size = 20;
-        text.text = "FAILED";
+        text.text = "FAILED RESTART?";
         add(text);
 
         startButton = new FlxButton(0,0,"",onButtonClick);

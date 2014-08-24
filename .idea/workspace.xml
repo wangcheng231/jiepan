@@ -63,20 +63,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YueFailed.hx" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="YueFailed.hx" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueFailed.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2088">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.30857143" vertical-offset="540" max-vertical-offset="2088">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YueGame.hx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="YueGame.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueGame.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23" vertical-offset="3583" max-vertical-offset="5940">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1459" max-vertical-offset="5940">
               <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
               <folding />
             </state>
@@ -110,8 +110,8 @@
         <option value="C:/HaxeToolkit/haxe/lib/flixel/3,3,4/flixel/FlxG.hx" />
         <option value="$PROJECT_DIR$/source/Main.hx" />
         <option value="$PROJECT_DIR$/source/com/mieaga/game/core/YueSuccess.hx" />
-        <option value="$PROJECT_DIR$/source/com/mieaga/game/core/YueFailed.hx" />
         <option value="$PROJECT_DIR$/source/com/mieaga/game/core/YueGame.hx" />
+        <option value="$PROJECT_DIR$/source/com/mieaga/game/core/YueFailed.hx" />
       </list>
     </option>
   </component>
@@ -524,12 +524,12 @@
       <workItem from="1406449100853" duration="140000" />
       <workItem from="1406451276788" duration="991000" />
       <workItem from="1408801708084" duration="2912000" />
-      <workItem from="1408848538812" duration="42000" />
+      <workItem from="1408848538812" duration="137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20402000" />
+    <option name="totallyTimeSpent" value="20497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="810" extended-state="6" />
@@ -743,18 +743,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueFailed.hx">
+    <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueGame.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2088">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1459" max-vertical-offset="5940">
+          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueGame.hx">
+    <entry file="file://$PROJECT_DIR$/source/com/mieaga/game/core/YueFailed.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23" vertical-offset="3583" max-vertical-offset="5940">
-          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.30857143" vertical-offset="540" max-vertical-offset="2088">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding />
         </state>
       </provider>
