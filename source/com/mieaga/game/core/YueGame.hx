@@ -102,7 +102,7 @@ class YueGame extends FlxState{
         }else{
             //失败
 //            FlxG.log(new YueMenu());
-            DC.log("失败");
+            DC.log("失败 failed");
             FlxG.switchState(new YueFailed());
         }
     }
