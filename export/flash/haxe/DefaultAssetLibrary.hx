@@ -48,8 +48,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/images/back.jpg", __ASSET__assets_images_back_jpg);
+		type.set ("assets/images/back.jpg", AssetType.IMAGE);
 		className.set ("assets/images/bird.png", __ASSET__assets_images_bird_png);
 		type.set ("assets/images/bird.png", AssetType.IMAGE);
+		className.set ("assets/images/clickme.jpg", __ASSET__assets_images_clickme_jpg);
+		type.set ("assets/images/clickme.jpg", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		className.set ("assets/images/start.jpg", __ASSET__assets_images_start_jpg);
@@ -128,7 +132,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/back.jpg";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/bird.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clickme.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
@@ -247,8 +257,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/images/back.jpg", __ASSET__assets_images_back_jpg);
+		type.set ("assets/images/back.jpg", AssetType.IMAGE);
+		
 		className.set ("assets/images/bird.png", __ASSET__assets_images_bird_png);
 		type.set ("assets/images/bird.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clickme.jpg", __ASSET__assets_images_clickme_jpg);
+		type.set ("assets/images/clickme.jpg", AssetType.IMAGE);
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
@@ -972,7 +988,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif flash
 
 @:keep class __ASSET__assets_data_data_goes_here_txt extends openfl.utils.ByteArray { }
+@:keep class __ASSET__assets_images_back_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_bird_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_clickme_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_images_go_here_txt extends openfl.utils.ByteArray { }
 @:keep class __ASSET__assets_images_start_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends openfl.utils.ByteArray { }
@@ -1051,11 +1069,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
 #elseif (windows || mac || linux)
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray {}
+@:bitmap("assets/images/back.jpg") class __ASSET__assets_images_back_jpg extends flash.display.BitmapData {}
 @:bitmap("assets/images/bird.png") class __ASSET__assets_images_bird_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/clickme.jpg") class __ASSET__assets_images_clickme_jpg extends flash.display.BitmapData {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray {}
 @:bitmap("assets/images/start.jpg") class __ASSET__assets_images_start_jpg extends flash.display.BitmapData {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}

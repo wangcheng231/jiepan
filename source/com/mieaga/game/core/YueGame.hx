@@ -1,4 +1,5 @@
 package com.mieaga.game.core;
+import flixel.FlxSprite;
 import pgr.dconsole.DC;
 import flixel.plugin.MouseEventManager;
 import flixel.FlxG;
@@ -42,6 +43,10 @@ class YueGame extends FlxState{
         _clickTime = 0;
         _tiles = new Array();
 
+        var back:FlxSprite = new FlxSprite();
+        back.loadGraphic("assets/images/back.jpg");
+        add(back);
+
         _textField = new FlxText(0,0,0,"00.000\"");
         _textField.color = 0xffffff;
         _textField.x = (Constants.STAGE_WIDTH - _textField.width)/2;
@@ -70,7 +75,7 @@ class YueGame extends FlxState{
             var corY:Float = dic[lableY];
             tile.x = corX;
             tile.y = corY;
-            add(tile);
+//            add(tile);
             tile.setCurrNum(currNum);
             _tiles.push(tile);
         }
